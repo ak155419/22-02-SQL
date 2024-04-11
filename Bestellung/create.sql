@@ -1,11 +1,11 @@
-CREATE TABLE Customers(
+CREATE TABLE Customers (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE,
     FOREIGN KEY (CustomerID) REFERENCES Orders(CustomerID)
 );
-   
-INSERT INTO Customers(OrderID, CustomerID, OrderDate) VALUES
+ 
+INSERT INTO Customers (OrderID, CustomerID, OrderDate) VALUES
 (10308, 2, '1996-09-18'),
 (10309, 37, '1996-09-19'),
 (10310, 77, '1996-09-20');

@@ -24,3 +24,10 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES
 (10355, 3, '1996-11-15'),
 (10278, 1, '1996-08-12');
 
+INSERT INTO Customers (CustomerID, CustomerName, ContactName, Country) VALUES
+(4, 'Bianchi Biciclette','Luca Bianchi','Italy'), 
+(5, 'Chop Suey Chinese', 'Li Wei', 'China');
+
+SELECT * 
+FROM Customers INNER JOIN Orders 
+ON Customers  = Orders.CustomerID;
